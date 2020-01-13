@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+// Add the Fabric plugin.
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 29
@@ -32,4 +34,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
     // add SDKs for any other desired Firebase products
     // https://firebase.google.com/docs/android/setup#available-libraries
+
+    // Add the Firebase Crashlytics dependency.
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
 }
